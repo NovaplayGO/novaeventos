@@ -15,10 +15,10 @@ def parse_event_datetime(time_str):
             dt = datetime.fromisoformat(time_str)
             py_tz = timezone(timedelta(hours=-3))
             dt_py = dt.astimezone(py_tz)
-            return dt_py, dt_py.strftime("%H:%M")
+            # Normalizar a naive datetime para evitar errores de comparación con tz
+            return dt_py.replace(tzinfo=None), dt_py.strftime("%H:%M")
         elif " " in time_str:
             dt = datetime.strptime(time_str, "%Y-%m-%d %H:%M")
-            py_tz = timezone(timedelta(hours=-3))
             return dt, dt.strftime("%H:%M")
     except Exception:
         pass
@@ -61,7 +61,6 @@ def extract_events():
                             srv_name = srv.get("name", "")
                             srv_url = srv.get("url", "")
 
-                            # Buscar Disney y AppleTV (MLS)
                             match_keyword = (
                                 "disney" in srv_name.lower() or "disney" in srv_url.lower() or
                                 "appletv" in srv_name.lower() or "appletv" in srv_url.lower() or
@@ -85,7 +84,7 @@ def extract_events():
                                 if event_item not in raw_events:
                                     raw_events.append(event_item)
 
-            # Ordenar cronológicamente de más temprano a más tarde
+            # Ordenar de más temprano a más tarde
             raw_events.sort(key=lambda x: x["_dt"])
 
             events_list = []
@@ -97,7 +96,7 @@ def extract_events():
             with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
                 json.dump(events_list, f, indent=2, ensure_ascii=False)
 
-            print(f"[EXITO] Se procesaron, ordenaron y guardaron {len(events_list)} eventos de fútbol (Disney + AppleTV) en {OUTPUT_FILE}")
+            print(f"[EXITO] Se procesaron, ordenaron cronológicamente y guardaron {len(events_list)} eventos en {OUTPUT_FILE}")
 
     except Exception as e:
         print(f"[ERROR] {e}")
