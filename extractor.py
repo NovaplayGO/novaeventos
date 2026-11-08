@@ -6,15 +6,15 @@ URL = "https://streamxhd.sbs/eventos.json"
 OUTPUT_FILE = "events.json"
 
 def get_paraguay_today():
-    # Paraguay standard time: UTC-4
-    py_tz = timezone(timedelta(hours=-4))
+    # Paraguay time: UTC-3
+    py_tz = timezone(timedelta(hours=-3))
     return datetime.now(py_tz).date()
 
 def parse_event_date_and_time(time_str):
     try:
         if "T" in time_str:
             dt = datetime.fromisoformat(time_str)
-            py_tz = timezone(timedelta(hours=-4))
+            py_tz = timezone(timedelta(hours=-3))
             dt_py = dt.astimezone(py_tz)
             return dt_py.date(), dt_py.strftime("%H:%M")
         elif " " in time_str:
@@ -37,7 +37,7 @@ def extract_events():
             events_list = []
 
             today_py = get_paraguay_today()
-            print(f"Filtrando eventos para hoy en Paraguay: {today_py}")
+            print(f"Filtrando eventos para hoy en Paraguay (UTC-3): {today_py}")
 
             for sport in sports:
                 for league in sport.get("leagues", []):

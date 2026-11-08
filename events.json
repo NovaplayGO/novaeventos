@@ -1,7 +1,7 @@
 [
   {
     "name": "Napoli vs Lazio",
-    "info": "07:30",
+    "info": "08:30",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -12,7 +12,7 @@
   },
   {
     "name": "Genoa vs Milan",
-    "info": "10:00",
+    "info": "11:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -23,7 +23,7 @@
   },
   {
     "name": "Monza vs Atalanta",
-    "info": "10:00",
+    "info": "11:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -34,7 +34,7 @@
   },
   {
     "name": "Inter vs Como",
-    "info": "13:00",
+    "info": "14:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -45,7 +45,7 @@
   },
   {
     "name": "Fiorentina vs Juventus",
-    "info": "15:45",
+    "info": "16:45",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -55,8 +55,19 @@
     "evento": "yes"
   },
   {
+    "name": "CA La Paz vs Tlaxcala",
+    "info": "00:05",
+    "CH-events": "no",
+    "NSFW": "NO",
+    "status": "true",
+    "url": "https://streamxhd.sbs/live1.php?stream=disney9",
+    "type": "CLEARKEY",
+    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
+    "evento": "yes"
+  },
+  {
     "name": "Leones Negros UdeG vs Durango",
-    "info": "14:00",
+    "info": "15:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -67,7 +78,7 @@
   },
   {
     "name": "Piratas vs Cancún",
-    "info": "21:00",
+    "info": "22:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -78,7 +89,7 @@
   },
   {
     "name": "Twente vs Ajax",
-    "info": "09:30",
+    "info": "10:30",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -89,7 +100,7 @@
   },
   {
     "name": "AZ vs Groningen",
-    "info": "11:45",
+    "info": "12:45",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -100,7 +111,7 @@
   },
   {
     "name": "Cambuur vs PSV",
-    "info": "11:45",
+    "info": "12:45",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -122,7 +133,7 @@
   },
   {
     "name": "Cray Wanderers vs Stockport County",
-    "info": "10:15",
+    "info": "11:15",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -133,7 +144,7 @@
   },
   {
     "name": "Oldham Athletic vs Sheffield Wednesday",
-    "info": "13:15",
+    "info": "14:15",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -144,7 +155,7 @@
   },
   {
     "name": "Crystal Palace vs Liverpool",
-    "info": "10:00",
+    "info": "11:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -155,7 +166,7 @@
   },
   {
     "name": "Sunderland vs Chelsea",
-    "info": "10:00",
+    "info": "11:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -166,7 +177,7 @@
   },
   {
     "name": "Ipswich Town vs AFC Bournemouth",
-    "info": "10:00",
+    "info": "11:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -177,7 +188,7 @@
   },
   {
     "name": "Brighton & Hove Albion vs Brentford",
-    "info": "10:00",
+    "info": "11:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -188,7 +199,7 @@
   },
   {
     "name": "Manchester United vs Aston Villa",
-    "info": "12:30",
+    "info": "13:30",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -199,7 +210,7 @@
   },
   {
     "name": "Rennes vs Lille",
-    "info": "10:00",
+    "info": "11:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -210,7 +221,7 @@
   },
   {
     "name": "Le Mans vs Monaco",
-    "info": "12:15",
+    "info": "13:15",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -221,7 +232,7 @@
   },
   {
     "name": "Le Havre vs Lorient",
-    "info": "12:15",
+    "info": "13:15",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -232,7 +243,7 @@
   },
   {
     "name": "Brest vs Olympique Lyonnais",
-    "info": "12:15",
+    "info": "13:15",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -243,7 +254,7 @@
   },
   {
     "name": "Angers SCO vs Nice",
-    "info": "12:15",
+    "info": "13:15",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -254,7 +265,7 @@
   },
   {
     "name": "Lens vs Olympique Marseille",
-    "info": "15:45",
+    "info": "16:45",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -265,7 +276,7 @@
   },
   {
     "name": "Köln vs Bayer Leverkusen",
-    "info": "10:30",
+    "info": "11:30",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -276,7 +287,7 @@
   },
   {
     "name": "Freiburg vs Union Berlin",
-    "info": "12:30",
+    "info": "13:30",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -287,7 +298,7 @@
   },
   {
     "name": "Hoffenheim vs Schalke 04",
-    "info": "14:30",
+    "info": "15:30",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -298,7 +309,7 @@
   },
   {
     "name": "Alanyaspor vs Trabzonspor",
-    "info": "11:30",
+    "info": "12:30",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -309,7 +320,7 @@
   },
   {
     "name": "Beşiktaş vs Gençlerbirliği",
-    "info": "14:00",
+    "info": "15:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -319,8 +330,30 @@
     "evento": "yes"
   },
   {
+    "name": "Portland Trail Blazers vs San Antonio Spurs",
+    "info": "00:00",
+    "CH-events": "no",
+    "NSFW": "NO",
+    "status": "true",
+    "url": "https://streamxhd.sbs/live1.php?stream=disney7",
+    "type": "CLEARKEY",
+    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
+    "evento": "yes"
+  },
+  {
+    "name": "Vancouver Canucks vs Edmonton Oilers",
+    "info": "00:00",
+    "CH-events": "no",
+    "NSFW": "NO",
+    "status": "true",
+    "url": "https://streamxhd.sbs/live1.php?stream=disney8",
+    "type": "CLEARKEY",
+    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
+    "evento": "yes"
+  },
+  {
     "name": "Florida Panthers vs Boston Bruins",
-    "info": "14:00",
+    "info": "15:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -331,7 +364,7 @@
   },
   {
     "name": "Vegas Golden Knights vs Buffalo Sabres",
-    "info": "16:30",
+    "info": "17:30",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -342,7 +375,7 @@
   },
   {
     "name": "New Jersey Devils vs Toronto Maple Leafs",
-    "info": "20:00",
+    "info": "21:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -353,7 +386,7 @@
   },
   {
     "name": "Pittsburgh Penguins vs Anaheim Ducks",
-    "info": "21:00",
+    "info": "22:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -364,7 +397,7 @@
   },
   {
     "name": "GP Brasil - Carrera",
-    "info": "13:00",
+    "info": "14:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -375,7 +408,7 @@
   },
   {
     "name": "GP Brasil - Race Hub",
-    "info": "13:00",
+    "info": "14:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -386,7 +419,7 @@
   },
   {
     "name": "GP Brasil - On Board Colapinto",
-    "info": "13:00",
+    "info": "14:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -397,7 +430,7 @@
   },
   {
     "name": "GP Brasil - On Board Verstappen",
-    "info": "13:00",
+    "info": "14:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -408,7 +441,7 @@
   },
   {
     "name": "GP Brasil - Cámara On Board",
-    "info": "13:00",
+    "info": "14:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",

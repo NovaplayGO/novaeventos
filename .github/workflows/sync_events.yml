@@ -2,7 +2,7 @@ name: Event Sync Workflow
 
 on:
   schedule:
-    - cron: '0 10 * * *' # 6:00 AM hora de Paraguay (UTC-4)
+    - cron: '0 9 * * *' # 6:00 AM hora de Paraguay (UTC-3)
   workflow_dispatch:
 
 jobs:
