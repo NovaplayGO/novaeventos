@@ -6,7 +6,6 @@ URL = "https://streamxhd.sbs/eventos.json"
 OUTPUT_FILE = "events.json"
 
 def get_paraguay_today():
-    # Paraguay time: UTC-3
     py_tz = timezone(timedelta(hours=-3))
     return datetime.now(py_tz).date()
 
@@ -37,9 +36,16 @@ def extract_events():
             events_list = []
 
             today_py = get_paraguay_today()
-            print(f"Filtrando eventos para hoy en Paraguay (UTC-3): {today_py}")
+            print(f"Filtrando eventos de FÚTBOL para hoy en Paraguay (UTC-3): {today_py}")
 
             for sport in sports:
+                sport_id = sport.get("id", "").lower()
+                sport_name = sport.get("name", "").lower()
+
+                # Filtrar estrictamente solo fútbol (id == "football")
+                if sport_id != "football" and "football" not in sport_name:
+                    continue
+
                 for league in sport.get("leagues", []):
                     for ev in league.get("events", []):
                         title = ev.get("title", "Evento Deportivo")
@@ -47,7 +53,6 @@ def extract_events():
 
                         ev_date, info_time = parse_event_date_and_time(time_raw)
 
-                        # Filtrar solo eventos del día actual en Paraguay
                         if ev_date and ev_date != today_py:
                             continue
 
@@ -75,7 +80,7 @@ def extract_events():
             with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
                 json.dump(events_list, f, indent=2, ensure_ascii=False)
 
-            print(f"[EXITO] Se procesaron y guardaron {len(events_list)} eventos de hoy en {OUTPUT_FILE}")
+            print(f"[EXITO] Se procesaron y guardaron {len(events_list)} eventos de fútbol de hoy en {OUTPUT_FILE}")
 
     except Exception as e:
         print(f"[ERROR] {e}")
