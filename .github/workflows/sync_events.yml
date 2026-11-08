@@ -2,7 +2,7 @@ name: Event Sync Workflow
 
 on:
   schedule:
-    - cron: '0 * * * *' # Cada hora
+    - cron: '0 10 * * *' # 6:00 AM hora de Paraguay (UTC-4)
   workflow_dispatch:
 
 jobs:
@@ -26,7 +26,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git add events.json
           if [ -n "$(git status --porcelain)" ]; then
-            git commit -m "Auto-sync events JSON [skip ci]"
+            git commit -m "Auto-sync today events JSON [skip ci]"
             git push origin main
           else
             echo "Sin cambios en los eventos."

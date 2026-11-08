@@ -1,22 +1,28 @@
 import urllib.request
 import json
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 
 URL = "https://streamxhd.sbs/eventos.json"
 OUTPUT_FILE = "events.json"
 
-def parse_time(time_str):
+def get_paraguay_today():
+    # Paraguay standard time: UTC-4
+    py_tz = timezone(timedelta(hours=-4))
+    return datetime.now(py_tz).date()
+
+def parse_event_date_and_time(time_str):
     try:
         if "T" in time_str:
             dt = datetime.fromisoformat(time_str)
-            return dt.strftime("%H:%M")
+            py_tz = timezone(timedelta(hours=-4))
+            dt_py = dt.astimezone(py_tz)
+            return dt_py.date(), dt_py.strftime("%H:%M")
         elif " " in time_str:
-            parts = time_str.split(" ")
-            if len(parts) > 1:
-                return parts[1][:5]
+            dt = datetime.strptime(time_str, "%Y-%m-%d %H:%M")
+            return dt.date(), dt.strftime("%H:%M")
     except Exception:
         pass
-    return "En Vivo"
+    return None, "En Vivo"
 
 def extract_events():
     req = urllib.request.Request(URL, headers={
@@ -30,12 +36,20 @@ def extract_events():
             sports = data.get("sports", [])
             events_list = []
 
+            today_py = get_paraguay_today()
+            print(f"Filtrando eventos para hoy en Paraguay: {today_py}")
+
             for sport in sports:
                 for league in sport.get("leagues", []):
                     for ev in league.get("events", []):
                         title = ev.get("title", "Evento Deportivo")
                         time_raw = ev.get("time", "")
-                        info_time = parse_time(time_raw)
+
+                        ev_date, info_time = parse_event_date_and_time(time_raw)
+
+                        # Filtrar solo eventos del día actual en Paraguay
+                        if ev_date and ev_date != today_py:
+                            continue
 
                         servers = ev.get("servers", [])
                         for srv in servers:
@@ -61,7 +75,7 @@ def extract_events():
             with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
                 json.dump(events_list, f, indent=2, ensure_ascii=False)
 
-            print(f"[EXITO] Se procesaron y guardaron {len(events_list)} eventos en {OUTPUT_FILE}")
+            print(f"[EXITO] Se procesaron y guardaron {len(events_list)} eventos de hoy en {OUTPUT_FILE}")
 
     except Exception as e:
         print(f"[ERROR] {e}")
