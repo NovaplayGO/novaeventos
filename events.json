@@ -1,7 +1,7 @@
 [
   {
     "name": "CA La Paz vs Tlaxcala",
-    "info": "00:05",
+    "info": "Liga de Expansión MX - 00:05",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -12,7 +12,7 @@
   },
   {
     "name": "Stafford Rangers vs Grimsby Town",
-    "info": "07:00",
+    "info": "FA Cup - 07:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -23,7 +23,7 @@
   },
   {
     "name": "Napoli vs Lazio",
-    "info": "08:30",
+    "info": "Serie A - 08:30",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -34,7 +34,7 @@
   },
   {
     "name": "Twente vs Ajax",
-    "info": "10:30",
+    "info": "Eredivisie - 10:30",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -45,7 +45,7 @@
   },
   {
     "name": "Genoa vs Milan",
-    "info": "11:00",
+    "info": "Serie A - 11:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -56,7 +56,7 @@
   },
   {
     "name": "Monza vs Atalanta",
-    "info": "11:00",
+    "info": "Serie A - 11:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -67,7 +67,7 @@
   },
   {
     "name": "Crystal Palace vs Liverpool",
-    "info": "11:00",
+    "info": "Premier League - 11:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -78,7 +78,7 @@
   },
   {
     "name": "Sunderland vs Chelsea",
-    "info": "11:00",
+    "info": "Premier League - 11:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -89,7 +89,7 @@
   },
   {
     "name": "Ipswich Town vs AFC Bournemouth",
-    "info": "11:00",
+    "info": "Premier League - 11:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -100,7 +100,7 @@
   },
   {
     "name": "Brighton & Hove Albion vs Brentford",
-    "info": "11:00",
+    "info": "Premier League - 11:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -111,7 +111,7 @@
   },
   {
     "name": "Rennes vs Lille",
-    "info": "11:00",
+    "info": "Ligue 1 - 11:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -122,7 +122,7 @@
   },
   {
     "name": "Cray Wanderers vs Stockport County",
-    "info": "11:15",
+    "info": "FA Cup - 11:15",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -133,7 +133,7 @@
   },
   {
     "name": "Köln vs Bayer Leverkusen",
-    "info": "11:30",
+    "info": "Bundesliga - 11:30",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -144,7 +144,7 @@
   },
   {
     "name": "Alanyaspor vs Trabzonspor",
-    "info": "12:30",
+    "info": "Super Lig - 12:30",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -155,7 +155,7 @@
   },
   {
     "name": "AZ vs Groningen",
-    "info": "12:45",
+    "info": "Eredivisie - 12:45",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -166,7 +166,7 @@
   },
   {
     "name": "Cambuur vs PSV",
-    "info": "12:45",
+    "info": "Eredivisie - 12:45",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -177,7 +177,7 @@
   },
   {
     "name": "Le Mans vs Monaco",
-    "info": "13:15",
+    "info": "Ligue 1 - 13:15",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -188,7 +188,7 @@
   },
   {
     "name": "Le Havre vs Lorient",
-    "info": "13:15",
+    "info": "Ligue 1 - 13:15",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -199,7 +199,7 @@
   },
   {
     "name": "Brest vs Olympique Lyonnais",
-    "info": "13:15",
+    "info": "Ligue 1 - 13:15",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -210,7 +210,7 @@
   },
   {
     "name": "Angers SCO vs Nice",
-    "info": "13:15",
+    "info": "Ligue 1 - 13:15",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -221,7 +221,7 @@
   },
   {
     "name": "Manchester United vs Aston Villa",
-    "info": "13:30",
+    "info": "Premier League - 13:30",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -232,7 +232,7 @@
   },
   {
     "name": "Freiburg vs Union Berlin",
-    "info": "13:30",
+    "info": "Bundesliga - 13:30",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -243,7 +243,7 @@
   },
   {
     "name": "Inter vs Como",
-    "info": "14:00",
+    "info": "Serie A - 14:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -254,7 +254,7 @@
   },
   {
     "name": "Oldham Athletic vs Sheffield Wednesday",
-    "info": "14:15",
+    "info": "FA Cup - 14:15",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -265,7 +265,7 @@
   },
   {
     "name": "Leones Negros UdeG vs Durango",
-    "info": "15:00",
+    "info": "Liga de Expansión MX - 15:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -276,7 +276,7 @@
   },
   {
     "name": "Beşiktaş vs Gençlerbirliği",
-    "info": "15:00",
+    "info": "Super Lig - 15:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -287,7 +287,7 @@
   },
   {
     "name": "Hoffenheim vs Schalke 04",
-    "info": "15:30",
+    "info": "Bundesliga - 15:30",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -298,7 +298,7 @@
   },
   {
     "name": "Fiorentina vs Juventus",
-    "info": "16:45",
+    "info": "Serie A - 16:45",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -309,7 +309,7 @@
   },
   {
     "name": "Lens vs Olympique Marseille",
-    "info": "16:45",
+    "info": "Ligue 1 - 16:45",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -320,7 +320,7 @@
   },
   {
     "name": "Piratas vs Cancún",
-    "info": "22:00",
+    "info": "Liga de Expansión MX - 22:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",

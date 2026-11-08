@@ -15,7 +15,6 @@ def parse_event_datetime(time_str):
             dt = datetime.fromisoformat(time_str)
             py_tz = timezone(timedelta(hours=-3))
             dt_py = dt.astimezone(py_tz)
-            # Normalizar a naive datetime para evitar errores de comparación con tz
             return dt_py.replace(tzinfo=None), dt_py.strftime("%H:%M")
         elif " " in time_str:
             dt = datetime.strptime(time_str, "%Y-%m-%d %H:%M")
@@ -47,6 +46,7 @@ def extract_events():
                     continue
 
                 for league in sport.get("leagues", []):
+                    league_name = league.get("name", "").strip()
                     for ev in league.get("events", []):
                         title = ev.get("title", "Evento Deportivo")
                         time_raw = ev.get("time", "")
@@ -55,6 +55,11 @@ def extract_events():
 
                         if dt_obj != datetime.max and dt_obj.date() != today_py:
                             continue
+
+                        if league_name:
+                            info_combined = f"{league_name} - {info_time}"
+                        else:
+                            info_combined = info_time
 
                         servers = ev.get("servers", [])
                         for srv in servers:
@@ -70,7 +75,7 @@ def extract_events():
                             if match_keyword:
                                 event_item = {
                                     "name": title,
-                                    "info": info_time,
+                                    "info": info_combined,
                                     "CH-events": "no",
                                     "NSFW": "NO",
                                     "status": "true",
@@ -84,7 +89,6 @@ def extract_events():
                                 if event_item not in raw_events:
                                     raw_events.append(event_item)
 
-            # Ordenar de más temprano a más tarde
             raw_events.sort(key=lambda x: x["_dt"])
 
             events_list = []
@@ -96,7 +100,7 @@ def extract_events():
             with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
                 json.dump(events_list, f, indent=2, ensure_ascii=False)
 
-            print(f"[EXITO] Se procesaron, ordenaron cronológicamente y guardaron {len(events_list)} eventos en {OUTPUT_FILE}")
+            print(f"[EXITO] Se procesaron y guardaron {len(events_list)} eventos con Liga y Hora en {OUTPUT_FILE}")
 
     except Exception as e:
         print(f"[ERROR] {e}")
