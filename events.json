@@ -11,7 +11,7 @@
     "evento": "yes"
   },
   {
-    "name": "Stafford Rangers vs Grimsby Town",
+    "name": "Stafford Rangers vs Gr",
     "info": "FA Cup - 07:00",
     "CH-events": "no",
     "NSFW": "NO",
@@ -66,7 +66,7 @@
     "evento": "yes"
   },
   {
-    "name": "Crystal Palace vs Liverpool",
+    "name": "Crystal Palace vs Live",
     "info": "Premier League - 11:00",
     "CH-events": "no",
     "NSFW": "NO",
@@ -88,7 +88,7 @@
     "evento": "yes"
   },
   {
-    "name": "Ipswich Town vs AFC Bournemouth",
+    "name": "Ipswich Town vs AFC Bo",
     "info": "Premier League - 11:00",
     "CH-events": "no",
     "NSFW": "NO",
@@ -99,7 +99,7 @@
     "evento": "yes"
   },
   {
-    "name": "Brighton & Hove Albion vs Brentford",
+    "name": "Brighton & Hove Albion",
     "info": "Premier League - 11:00",
     "CH-events": "no",
     "NSFW": "NO",
@@ -121,7 +121,7 @@
     "evento": "yes"
   },
   {
-    "name": "Cray Wanderers vs Stockport County",
+    "name": "Cray Wanderers vs Stoc",
     "info": "FA Cup - 11:15",
     "CH-events": "no",
     "NSFW": "NO",
@@ -132,7 +132,7 @@
     "evento": "yes"
   },
   {
-    "name": "Köln vs Bayer Leverkusen",
+    "name": "Köln vs Bayer Leverkus",
     "info": "Bundesliga - 11:30",
     "CH-events": "no",
     "NSFW": "NO",
@@ -143,7 +143,7 @@
     "evento": "yes"
   },
   {
-    "name": "Alanyaspor vs Trabzonspor",
+    "name": "Alanyaspor vs Trabzons",
     "info": "Super Lig - 12:30",
     "CH-events": "no",
     "NSFW": "NO",
@@ -198,7 +198,7 @@
     "evento": "yes"
   },
   {
-    "name": "Brest vs Olympique Lyonnais",
+    "name": "Brest vs Olympique Lyo",
     "info": "Ligue 1 - 13:15",
     "CH-events": "no",
     "NSFW": "NO",
@@ -220,7 +220,7 @@
     "evento": "yes"
   },
   {
-    "name": "Manchester United vs Aston Villa",
+    "name": "Manchester Utd vs Asto",
     "info": "Premier League - 13:30",
     "CH-events": "no",
     "NSFW": "NO",
@@ -231,7 +231,7 @@
     "evento": "yes"
   },
   {
-    "name": "Freiburg vs Union Berlin",
+    "name": "Freiburg vs Union Berl",
     "info": "Bundesliga - 13:30",
     "CH-events": "no",
     "NSFW": "NO",
@@ -253,7 +253,7 @@
     "evento": "yes"
   },
   {
-    "name": "Oldham Athletic vs Sheffield Wednesday",
+    "name": "Oldham Ath vs Sheffiel",
     "info": "FA Cup - 14:15",
     "CH-events": "no",
     "NSFW": "NO",
@@ -264,7 +264,7 @@
     "evento": "yes"
   },
   {
-    "name": "Leones Negros UdeG vs Durango",
+    "name": "Leones Negros UdeG vs",
     "info": "Liga de Expansión MX - 15:00",
     "CH-events": "no",
     "NSFW": "NO",
@@ -275,7 +275,7 @@
     "evento": "yes"
   },
   {
-    "name": "Beşiktaş vs Gençlerbirliği",
+    "name": "Beşiktaş vs Gençlerbir",
     "info": "Super Lig - 15:00",
     "CH-events": "no",
     "NSFW": "NO",
@@ -286,7 +286,7 @@
     "evento": "yes"
   },
   {
-    "name": "Hoffenheim vs Schalke 04",
+    "name": "Hoffenheim vs Schalke",
     "info": "Bundesliga - 15:30",
     "CH-events": "no",
     "NSFW": "NO",
@@ -308,7 +308,7 @@
     "evento": "yes"
   },
   {
-    "name": "Lens vs Olympique Marseille",
+    "name": "Lens vs Olympique Mars",
     "info": "Ligue 1 - 16:45",
     "CH-events": "no",
     "NSFW": "NO",

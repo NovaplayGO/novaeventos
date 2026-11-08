@@ -23,6 +23,25 @@ def parse_event_datetime(time_str):
         pass
     return datetime.max, "En Vivo"
 
+def abbreviate_name(name, max_len=22):
+    if not name or len(name) <= max_len:
+        return name
+    # Abreviaciones comunes para acortar nombres largos sin superar 22 caracteres
+    shortened = (name
+        .replace(" Fútbol Club", "")
+        .replace(" Club de Fútbol", "")
+        .replace(" de", "")
+        .replace(" FC", "")
+        .replace(" CF", "")
+        .replace(" United", " Utd")
+        .replace(" Athletic", " Ath")
+        .replace(" Wandrerers", " Wand")
+        .strip())
+
+    if len(shortened) <= max_len:
+        return shortened
+    return shortened[:max_len].strip()
+
 def extract_events():
     req = urllib.request.Request(URL, headers={
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.0.0 Safari/537.36",
@@ -48,7 +67,9 @@ def extract_events():
                 for league in sport.get("leagues", []):
                     league_name = league.get("name", "").strip()
                     for ev in league.get("events", []):
-                        title = ev.get("title", "Evento Deportivo")
+                        raw_title = ev.get("title", "Evento Deportivo")
+                        title = abbreviate_name(raw_title, 22)
+
                         time_raw = ev.get("time", "")
 
                         dt_obj, info_time = parse_event_datetime(time_raw)
@@ -100,7 +121,7 @@ def extract_events():
             with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
                 json.dump(events_list, f, indent=2, ensure_ascii=False)
 
-            print(f"[EXITO] Se procesaron y guardaron {len(events_list)} eventos con Liga y Hora en {OUTPUT_FILE}")
+            print(f"[EXITO] Se procesaron, abreviaron a máx 22 chars y guardaron {len(events_list)} eventos en {OUTPUT_FILE}")
 
     except Exception as e:
         print(f"[ERROR] {e}")
