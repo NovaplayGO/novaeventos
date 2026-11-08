@@ -1,7 +1,7 @@
 [
   {
     "name": "CA La Paz vs Tlaxcala",
-    "info": "Liga de Expansión MX - 00:05",
+    "info": "L. Expansión - 00:05",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -67,7 +67,7 @@
   },
   {
     "name": "Crystal Palace vs Live",
-    "info": "Premier League - 11:00",
+    "info": "Premier - 11:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -78,7 +78,7 @@
   },
   {
     "name": "Sunderland vs Chelsea",
-    "info": "Premier League - 11:00",
+    "info": "Premier - 11:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -89,7 +89,7 @@
   },
   {
     "name": "Ipswich Town vs AFC Bo",
-    "info": "Premier League - 11:00",
+    "info": "Premier - 11:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -100,7 +100,7 @@
   },
   {
     "name": "Brighton & Hove Albion",
-    "info": "Premier League - 11:00",
+    "info": "Premier - 11:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -121,7 +121,7 @@
     "evento": "yes"
   },
   {
-    "name": "Cray Wanderers vs Stoc",
+    "name": "Cray Wand vs Stockport",
     "info": "FA Cup - 11:15",
     "CH-events": "no",
     "NSFW": "NO",
@@ -221,7 +221,7 @@
   },
   {
     "name": "Manchester Utd vs Asto",
-    "info": "Premier League - 13:30",
+    "info": "Premier - 13:30",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -265,7 +265,7 @@
   },
   {
     "name": "Leones Negros UdeG vs",
-    "info": "Liga de Expansión MX - 15:00",
+    "info": "L. Expansión - 15:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -320,7 +320,7 @@
   },
   {
     "name": "Piratas vs Cancún",
-    "info": "Liga de Expansión MX - 22:00",
+    "info": "L. Expansión - 22:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",

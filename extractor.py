@@ -26,7 +26,6 @@ def parse_event_datetime(time_str):
 def abbreviate_name(name, max_len=22):
     if not name or len(name) <= max_len:
         return name
-    # Abreviaciones comunes para acortar nombres largos sin superar 22 caracteres
     shortened = (name
         .replace(" Fútbol Club", "")
         .replace(" Club de Fútbol", "")
@@ -35,12 +34,40 @@ def abbreviate_name(name, max_len=22):
         .replace(" CF", "")
         .replace(" United", " Utd")
         .replace(" Athletic", " Ath")
-        .replace(" Wandrerers", " Wand")
+        .replace(" Wanderers", " Wand")
         .strip())
 
     if len(shortened) <= max_len:
         return shortened
     return shortened[:max_len].strip()
+
+def abbreviate_info(league_name, time_str, max_len=22):
+    league_map = {
+        "Liga de Expansión MX": "L. Expansión",
+        "Premier League": "Premier",
+        "Champions League": "Champions",
+        "Copa Libertadores": "Libertadores",
+        "Copa Sudamericana": "Sudamericana",
+        "Primera División": "1ª Div",
+        "Superliga Argentina": "Superliga",
+        "Major League Soccer": "MLS"
+    }
+
+    short_league = league_map.get(league_name, league_name)
+    if len(short_league) > 12:
+        short_league = short_league[:10].strip() + "."
+
+    combined = f"{short_league} - {time_str}"
+    if len(combined) <= max_len:
+        return combined
+
+    # Si aún supera 22, recortar más la liga
+    max_league_len = max_len - len(time_str) - 3 # por " - "
+    if max_league_len > 0:
+        short_league = short_league[:max_league_len].strip()
+        combined = f"{short_league} - {time_str}"
+
+    return combined[:max_len]
 
 def extract_events():
     req = urllib.request.Request(URL, headers={
@@ -71,16 +98,12 @@ def extract_events():
                         title = abbreviate_name(raw_title, 22)
 
                         time_raw = ev.get("time", "")
-
                         dt_obj, info_time = parse_event_datetime(time_raw)
 
                         if dt_obj != datetime.max and dt_obj.date() != today_py:
                             continue
 
-                        if league_name:
-                            info_combined = f"{league_name} - {info_time}"
-                        else:
-                            info_combined = info_time
+                        info_combined = abbreviate_info(league_name, info_time, 22)
 
                         servers = ev.get("servers", [])
                         for srv in servers:
@@ -121,7 +144,7 @@ def extract_events():
             with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
                 json.dump(events_list, f, indent=2, ensure_ascii=False)
 
-            print(f"[EXITO] Se procesaron, abreviaron a máx 22 chars y guardaron {len(events_list)} eventos en {OUTPUT_FILE}")
+            print(f"[EXITO] Se procesaron y guardaron {len(events_list)} eventos con nombre e info <= 22 chars en {OUTPUT_FILE}")
 
     except Exception as e:
         print(f"[ERROR] {e}")
