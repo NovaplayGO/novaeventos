@@ -3,7 +3,7 @@ import json
 from datetime import datetime
 
 URL = "https://streamxhd.sbs/eventos.json"
-OUTPUT_FILE = "disney_events.json"
+OUTPUT_FILE = "events.json"
 
 def parse_time(time_str):
     try:
@@ -18,7 +18,7 @@ def parse_time(time_str):
         pass
     return "En Vivo"
 
-def scrape_disney_events():
+def extract_events():
     req = urllib.request.Request(URL, headers={
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.0.0 Safari/537.36",
         "Referer": "https://streamxhd.sbs/"
@@ -58,13 +58,13 @@ def scrape_disney_events():
                                 if event_item not in events_list:
                                     events_list.append(event_item)
 
-            with open(OUTPUT_FILE, 'w', encoding='utf-8' ) as f:
+            with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
                 json.dump(events_list, f, indent=2, ensure_ascii=False)
 
-            print(f"[EXITO] Se procesaron y guardaron {len(events_list)} eventos de Disney en {OUTPUT_FILE}")
+            print(f"[EXITO] Se procesaron y guardaron {len(events_list)} eventos en {OUTPUT_FILE}")
 
     except Exception as e:
         print(f"[ERROR] {e}")
 
 if __name__ == "__main__":
-    scrape_disney_events()
+    extract_events()
