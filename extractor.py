@@ -9,19 +9,20 @@ def get_paraguay_today():
     py_tz = timezone(timedelta(hours=-3))
     return datetime.now(py_tz).date()
 
-def parse_event_date_and_time(time_str):
+def parse_event_datetime(time_str):
     try:
         if "T" in time_str:
             dt = datetime.fromisoformat(time_str)
             py_tz = timezone(timedelta(hours=-3))
             dt_py = dt.astimezone(py_tz)
-            return dt_py.date(), dt_py.strftime("%H:%M")
+            return dt_py, dt_py.strftime("%H:%M")
         elif " " in time_str:
             dt = datetime.strptime(time_str, "%Y-%m-%d %H:%M")
-            return dt.date(), dt.strftime("%H:%M")
+            py_tz = timezone(timedelta(hours=-3))
+            return dt, dt.strftime("%H:%M")
     except Exception:
         pass
-    return None, "En Vivo"
+    return datetime.max, "En Vivo"
 
 def extract_events():
     req = urllib.request.Request(URL, headers={
@@ -33,16 +34,15 @@ def extract_events():
         with urllib.request.urlopen(req, timeout=15) as resp:
             data = json.loads(resp.read().decode("utf-8"))
             sports = data.get("sports", [])
-            events_list = []
+            raw_events = []
 
             today_py = get_paraguay_today()
-            print(f"Filtrando eventos de FÚTBOL para hoy en Paraguay (UTC-3): {today_py}")
+            print(f"Filtrando eventos de fútbol de hoy (UTC-3): {today_py}")
 
             for sport in sports:
                 sport_id = sport.get("id", "").lower()
                 sport_name = sport.get("name", "").lower()
 
-                # Filtrar estrictamente solo fútbol (id == "football")
                 if sport_id != "football" and "football" not in sport_name:
                     continue
 
@@ -51,9 +51,9 @@ def extract_events():
                         title = ev.get("title", "Evento Deportivo")
                         time_raw = ev.get("time", "")
 
-                        ev_date, info_time = parse_event_date_and_time(time_raw)
+                        dt_obj, info_time = parse_event_datetime(time_raw)
 
-                        if ev_date and ev_date != today_py:
+                        if dt_obj != datetime.max and dt_obj.date() != today_py:
                             continue
 
                         servers = ev.get("servers", [])
@@ -61,7 +61,14 @@ def extract_events():
                             srv_name = srv.get("name", "")
                             srv_url = srv.get("url", "")
 
-                            if "disney" in srv_name.lower() or "disney" in srv_url.lower():
+                            # Buscar Disney y AppleTV (MLS)
+                            match_keyword = (
+                                "disney" in srv_name.lower() or "disney" in srv_url.lower() or
+                                "appletv" in srv_name.lower() or "appletv" in srv_url.lower() or
+                                "apple" in srv_name.lower()
+                            )
+
+                            if match_keyword:
                                 event_item = {
                                     "name": title,
                                     "info": info_time,
@@ -71,16 +78,26 @@ def extract_events():
                                     "url": srv_url,
                                     "type": "CLEARKEY",
                                     "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
-                                    "evento": "yes"
+                                    "evento": "yes",
+                                    "_dt": dt_obj
                                 }
 
-                                if event_item not in events_list:
-                                    events_list.append(event_item)
+                                if event_item not in raw_events:
+                                    raw_events.append(event_item)
+
+            # Ordenar cronológicamente de más temprano a más tarde
+            raw_events.sort(key=lambda x: x["_dt"])
+
+            events_list = []
+            for item in raw_events:
+                clean_item = {k: v for k, v in item.items() if k != "_dt"}
+                if clean_item not in events_list:
+                    events_list.append(clean_item)
 
             with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
                 json.dump(events_list, f, indent=2, ensure_ascii=False)
 
-            print(f"[EXITO] Se procesaron y guardaron {len(events_list)} eventos de fútbol de hoy en {OUTPUT_FILE}")
+            print(f"[EXITO] Se procesaron, ordenaron y guardaron {len(events_list)} eventos de fútbol (Disney + AppleTV) en {OUTPUT_FILE}")
 
     except Exception as e:
         print(f"[ERROR] {e}")
