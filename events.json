@@ -1,18 +1,7 @@
 [
   {
-    "name": "Huracán vs River Plate",
-    "info": "Segunda Di. - 14:30",
-    "CH-events": "no",
-    "NSFW": "NO",
-    "status": "true",
-    "url": "https://streamxhd.sbs/live1.php?stream=disney2",
-    "type": "CLEARKEY",
-    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
-    "evento": "yes"
-  },
-  {
-    "name": "Häcken vs Chelsea",
-    "info": "Champions. - 14:45",
+    "name": "OH Leuven vs Køge Kvin",
+    "info": "Champions. - 12:45",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -22,23 +11,23 @@
     "evento": "yes"
   },
   {
-    "name": "Roma vs Servette Chêno",
+    "name": "SL Benfica vs Austria",
     "info": "Champions. - 17:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
-    "url": "https://streamxhd.sbs/live1.php?stream=disney3",
+    "url": "https://streamxhd.sbs/live1.php?stream=disney2",
     "type": "CLEARKEY",
     "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
     "evento": "yes"
   },
   {
-    "name": "PSG vs Bayern Múnich",
-    "info": "Champions. - 17:00",
+    "name": "Piratas vs Atlético La",
+    "info": "L. Expansión - 23:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
-    "url": "https://streamxhd.sbs/live1.php?stream=disney4",
+    "url": "https://streamxhd.sbs/live1.php?stream=disney3",
     "type": "CLEARKEY",
     "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
     "evento": "yes"
