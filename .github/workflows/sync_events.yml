@@ -31,3 +31,13 @@ jobs:
           else
             echo "Sin cambios en los eventos."
           fi
+
+      - name: Disparar sync_eventos_futbol en Novacenter
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          curl -X POST \
+            -H "Authorization: token ${GH_PAT}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/NovaplayGO/novacenter/actions/workflows/sync_eventos_futbol.yml/dispatches \
+            -d '{"ref":"main"}' || echo "⚠️ No se pudo disparar el workflow en novacenter"
