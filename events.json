@@ -1,27 +1,5 @@
 [
   {
-    "name": "OH Leuven vs Køge Kvin",
-    "info": "Champions. - 12:45",
-    "CH-events": "no",
-    "NSFW": "NO",
-    "status": "true",
-    "url": "https://streamxhd.sbs/live1.php?stream=disney1",
-    "type": "CLEARKEY",
-    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
-    "evento": "yes"
-  },
-  {
-    "name": "SL Benfica vs Austria",
-    "info": "Champions. - 17:00",
-    "CH-events": "no",
-    "NSFW": "NO",
-    "status": "true",
-    "url": "https://streamxhd.sbs/live1.php?stream=disney2",
-    "type": "CLEARKEY",
-    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
-    "evento": "yes"
-  },
-  {
     "name": "Piratas vs Atlético La",
     "info": "L. Expansión - 23:00",
     "CH-events": "no",
