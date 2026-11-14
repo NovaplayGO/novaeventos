@@ -71,7 +71,7 @@ def abbreviate_info(league_name, time_str, max_len=22):
 
 def extract_events():
     req = urllib.request.Request(URL, headers={
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.0.0 Safari/537.36",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/160.0.0.0 Safari/537.36",
         "Referer": "https://streamxhd.sbs/"
     })
 
