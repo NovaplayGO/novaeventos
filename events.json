@@ -1,7 +1,18 @@
 [
   {
-    "name": "Luxemburgo vs Estonia",
-    "info": "Liga de Na. - 14:45",
+    "name": "Kosovo vs Israel",
+    "info": "Liga de Na. - 09:00",
+    "CH-events": "no",
+    "NSFW": "NO",
+    "status": "true",
+    "url": "https://streamxhd.sbs/live1.php?stream=disney2",
+    "type": "CLEARKEY",
+    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
+    "evento": "yes"
+  },
+  {
+    "name": "Central Español vs Bos",
+    "info": "Liga Uruguay - 10:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -11,8 +22,8 @@
     "evento": "yes"
   },
   {
-    "name": "Liechtenstein vs Azerb",
-    "info": "Liga de Na. - 14:45",
+    "name": "Georgia vs Hungría",
+    "info": "Liga de Na. - 12:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -22,8 +33,8 @@
     "evento": "yes"
   },
   {
-    "name": "Escocia vs Macedonial",
-    "info": "Liga de Na. - 14:45",
+    "name": "Noruega vs Gales",
+    "info": "Liga de Na. - 14:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -33,18 +44,7 @@
     "evento": "yes"
   },
   {
-    "name": "Bulgaria vs Islandia",
-    "info": "Liga de Na. - 14:45",
-    "CH-events": "no",
-    "NSFW": "NO",
-    "status": "true",
-    "url": "https://streamxhd.sbs/live1.php?stream=disney5",
-    "type": "CLEARKEY",
-    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
-    "evento": "yes"
-  },
-  {
-    "name": "Eslovaquia vs Islas Fe",
+    "name": "Austria vs República I",
     "info": "Liga de Na. - 14:45",
     "CH-events": "no",
     "NSFW": "NO",
@@ -55,23 +55,67 @@
     "evento": "yes"
   },
   {
-    "name": "Andorra vs Gibraltar",
-    "info": "Liga de Na. - 16:45",
+    "name": "Suecia vs Bosnia-Herze",
+    "info": "Liga de Na. - 14:45",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
-    "url": "https://streamxhd.sbs/live1.php?stream=disney2",
+    "url": "https://streamxhd.sbs/live1.php?stream=disney9",
     "type": "CLEARKEY",
     "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
     "evento": "yes"
   },
   {
-    "name": "Colo-Colo vs Racing Cl",
-    "info": "Amistoso I. - 19:00",
+    "name": "Deportivo Maldonado vs",
+    "info": "Liga Uruguay - 16:30",
+    "CH-events": "no",
+    "NSFW": "NO",
+    "status": "true",
+    "url": "https://streamxhd.sbs/live1.php?stream=disney5",
+    "type": "CLEARKEY",
+    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
+    "evento": "yes"
+  },
+  {
+    "name": "Irlandal Norte vs Ucra",
+    "info": "Liga de Na. - 16:45",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
     "url": "https://streamxhd.sbs/live1.php?stream=disney7",
+    "type": "CLEARKEY",
+    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
+    "evento": "yes"
+  },
+  {
+    "name": "Rumanía vs Polonia",
+    "info": "Liga de Na. - 16:45",
+    "CH-events": "no",
+    "NSFW": "NO",
+    "status": "true",
+    "url": "https://streamxhd.sbs/live1.php?stream=disney8",
+    "type": "CLEARKEY",
+    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
+    "evento": "yes"
+  },
+  {
+    "name": "Portugal vs Dinamarca",
+    "info": "Liga de Na. - 16:45",
+    "CH-events": "no",
+    "NSFW": "NO",
+    "status": "true",
+    "url": "https://streamxhd.sbs/live1.php?stream=disney10",
+    "type": "CLEARKEY",
+    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
+    "evento": "yes"
+  },
+  {
+    "name": "Nacional vs Albion",
+    "info": "Liga Uruguay - 20:00",
+    "CH-events": "no",
+    "NSFW": "NO",
+    "status": "true",
+    "url": "https://streamxhd.sbs/live1.php?stream=disney11",
     "type": "CLEARKEY",
     "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
     "evento": "yes"
