@@ -2,7 +2,7 @@ name: Event Sync Workflow
 
 on:
   schedule:
-    - cron: '30 6 * * *' # 3:30 AM hora de Paraguay (UTC-3)
+    - cron: '23 6 * * *' # 3:23 AM hora de Paraguay (UTC-3) - minuto no redondo para evitar saturación
   workflow_dispatch:
 
 jobs:
@@ -26,7 +26,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git add events.json
           if [ -n "$(git status --porcelain)" ]; then
-            git commit -m "Auto-sync today events JSON [skip ci]"
+            git commit -m "Auto-sync today events JSON"
             git push origin main
           else
             echo "Sin cambios en los eventos."
@@ -41,3 +41,6 @@ jobs:
             -H "Accept: application/vnd.github+json" \
             https://api.github.com/repos/NovaplayGO/novacenter/actions/workflows/sync_eventos_futbol.yml/dispatches \
             -d '{"ref":"main"}' || echo "⚠️ No se pudo disparar el workflow en novacenter"
+
+      - name: Keepalive Workflow
+        uses: gautamkrishnar/keepalive-workflow@v2
