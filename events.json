@@ -1,7 +1,18 @@
 [
   {
-    "name": "Häcken vs Manchester C",
-    "info": "Champions. - 14:45",
+    "name": "Seattle Sounders vs Re",
+    "info": "MLS - 00:00",
+    "CH-events": "no",
+    "NSFW": "NO",
+    "status": "true",
+    "url": "https://streamxhd.sbs/live1.php?stream=appletv2",
+    "type": "CLEARKEY",
+    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
+    "evento": "yes"
+  },
+  {
+    "name": "Sorteo Fase Final",
+    "info": "Liga de Na. - 08:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -11,12 +22,67 @@
     "evento": "yes"
   },
   {
-    "name": "Juventus vs OH Leuven",
-    "info": "Champions. - 17:00",
+    "name": "Racing vs Central Espa",
+    "info": "Liga Uruguay - 16:30",
+    "CH-events": "no",
+    "NSFW": "NO",
+    "status": "true",
+    "url": "https://streamxhd.sbs/live1.php?stream=disney3",
+    "type": "CLEARKEY",
+    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
+    "evento": "yes"
+  },
+  {
+    "name": "Cerro vs Nacional",
+    "info": "Liga Uruguay - 16:30",
+    "CH-events": "no",
+    "NSFW": "NO",
+    "status": "true",
+    "url": "https://streamxhd.sbs/live1.php?stream=disney4",
+    "type": "CLEARKEY",
+    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
+    "evento": "yes"
+  },
+  {
+    "name": "Liverpool vs Wanderers",
+    "info": "Liga Uruguay - 16:30",
+    "CH-events": "no",
+    "NSFW": "NO",
+    "status": "true",
+    "url": "https://streamxhd.sbs/live1.php?stream=disney5",
+    "type": "CLEARKEY",
+    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
+    "evento": "yes"
+  },
+  {
+    "name": "Bayern München vs Köln",
+    "info": "Bundesliga - 16:30",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
     "url": "https://streamxhd.sbs/live1.php?stream=disney2",
+    "type": "CLEARKEY",
+    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
+    "evento": "yes"
+  },
+  {
+    "name": "Troyes vs Le Havre",
+    "info": "Ligue 1 - 16:45",
+    "CH-events": "no",
+    "NSFW": "NO",
+    "status": "true",
+    "url": "https://streamxhd.sbs/live1.php?stream=disney6",
+    "type": "CLEARKEY",
+    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
+    "evento": "yes"
+  },
+  {
+    "name": "Puebla vs Atlético San",
+    "info": "Liga MX - 22:00",
+    "CH-events": "no",
+    "NSFW": "NO",
+    "status": "true",
+    "url": "https://streamxhd.sbs/live1.php?stream=disney10",
     "type": "CLEARKEY",
     "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
     "evento": "yes"
