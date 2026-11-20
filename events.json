@@ -1,27 +1,5 @@
 [
   {
-    "name": "Seattle Sounders vs Re",
-    "info": "MLS - 00:00",
-    "CH-events": "no",
-    "NSFW": "NO",
-    "status": "true",
-    "url": "https://streamxhd.sbs/live1.php?stream=appletv2",
-    "type": "CLEARKEY",
-    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
-    "evento": "yes"
-  },
-  {
-    "name": "Sorteo Fase Final",
-    "info": "Liga de Na. - 08:00",
-    "CH-events": "no",
-    "NSFW": "NO",
-    "status": "true",
-    "url": "https://streamxhd.sbs/live1.php?stream=disney1",
-    "type": "CLEARKEY",
-    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
-    "evento": "yes"
-  },
-  {
     "name": "Racing vs Central Espa",
     "info": "Liga Uruguay - 16:30",
     "CH-events": "no",
