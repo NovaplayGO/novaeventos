@@ -2,7 +2,7 @@ name: Event Sync Workflow
 
 on:
   schedule:
-    - cron: '23 6 * * *' # 3:23 AM hora de Paraguay (UTC-3) - minuto no redondo para evitar saturación
+    - cron: '23 6 * * *' # 3:23 AM hora de Paraguay (UTC-3)
   workflow_dispatch:
 
 jobs:
@@ -10,8 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      actions: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
 
       - uses: actions/setup-python@v5
         with:
@@ -34,7 +37,7 @@ jobs:
 
       - name: Disparar sync_eventos_futbol en Novacenter
         env:
-          GH_PAT: ${{ secrets.GH_PAT }}
+          GH_PAT: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
         run: |
           curl -X POST \
             -H "Authorization: token ${GH_PAT}" \
@@ -44,3 +47,5 @@ jobs:
 
       - name: Keepalive Workflow
         uses: gautamkrishnar/keepalive-workflow@v2
+        with:
+          gh_token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
