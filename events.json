@@ -1,16 +1,5 @@
 [
   {
-    "name": "Juventus vs Venezia",
-    "info": "Serie A - 08:30",
-    "CH-events": "no",
-    "NSFW": "NO",
-    "status": "true",
-    "url": "https://streamxhd.sbs/live1.php?stream=disney1",
-    "type": "CLEARKEY",
-    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
-    "evento": "yes"
-  },
-  {
     "name": "Burnley vs Blackburn R",
     "info": "Championship - 09:00",
     "CH-events": "no",
