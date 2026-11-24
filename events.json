@@ -1,7 +1,18 @@
 [
   {
-    "name": "Juventud vs Defensor S",
-    "info": "Liga Uruguay - 16:30",
+    "name": "Shabab Al Ahli vs Al Q",
+    "info": "AFC Champi. - 11:00",
+    "CH-events": "no",
+    "NSFW": "NO",
+    "status": "true",
+    "url": "https://streamxhd.sbs/live1.php?stream=disney1",
+    "type": "CLEARKEY",
+    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
+    "evento": "yes"
+  },
+  {
+    "name": "Galatasaray vs Aston V",
+    "info": "Champions - 14:45",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -11,8 +22,8 @@
     "evento": "yes"
   },
   {
-    "name": "Monza vs Fiorentina",
-    "info": "Serie A - 16:45",
+    "name": "Bodø/Glimt vs LASK Lin",
+    "info": "Champions - 14:45",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -22,19 +33,8 @@
     "evento": "yes"
   },
   {
-    "name": "Gimnasia La Plata vs N",
-    "info": "Liga Profe. - 17:00",
-    "CH-events": "no",
-    "NSFW": "NO",
-    "status": "true",
-    "url": "https://streamxhd.sbs/live1.php?stream=disney5",
-    "type": "CLEARKEY",
-    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
-    "evento": "yes"
-  },
-  {
-    "name": "Brentford vs Everton",
-    "info": "Premier - 17:00",
+    "name": "Al Nassr vs Al Sadd",
+    "info": "AFC Champi. - 15:15",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -44,8 +44,19 @@
     "evento": "yes"
   },
   {
-    "name": "Albion vs Danubio",
-    "info": "Liga Uruguay - 19:30",
+    "name": "Feyenoord vs Porto",
+    "info": "Champions - 17:00",
+    "CH-events": "no",
+    "NSFW": "NO",
+    "status": "true",
+    "url": "https://streamxhd.sbs/live1.php?stream=disney5",
+    "type": "CLEARKEY",
+    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
+    "evento": "yes"
+  },
+  {
+    "name": "Como vs AEK Athens",
+    "info": "Champions - 17:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
@@ -55,12 +66,67 @@
     "evento": "yes"
   },
   {
-    "name": "St. Louis City vs Los",
-    "info": "MLS - 22:00",
+    "name": "Arsenal vs Borussia Do",
+    "info": "Champions - 17:00",
     "CH-events": "no",
     "NSFW": "NO",
     "status": "true",
-    "url": "https://streamxhd.sbs/live1.php?stream=appletv1",
+    "url": "https://streamxhd.sbs/live1.php?stream=disney7",
+    "type": "CLEARKEY",
+    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
+    "evento": "yes"
+  },
+  {
+    "name": "Manchester City vs Nap",
+    "info": "Champions - 17:00",
+    "CH-events": "no",
+    "NSFW": "NO",
+    "status": "true",
+    "url": "https://streamxhd.sbs/live1.php?stream=disney8",
+    "type": "CLEARKEY",
+    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
+    "evento": "yes"
+  },
+  {
+    "name": "RB Leipzig vs Lens",
+    "info": "Champions - 17:00",
+    "CH-events": "no",
+    "NSFW": "NO",
+    "status": "true",
+    "url": "https://streamxhd.sbs/live1.php?stream=disney9",
+    "type": "CLEARKEY",
+    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
+    "evento": "yes"
+  },
+  {
+    "name": "Real Madrid vs PSV",
+    "info": "Champions - 17:00",
+    "CH-events": "no",
+    "NSFW": "NO",
+    "status": "true",
+    "url": "https://streamxhd.sbs/live1.php?stream=disney10",
+    "type": "CLEARKEY",
+    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
+    "evento": "yes"
+  },
+  {
+    "name": "Slovan Bratislava vs R",
+    "info": "Champions - 17:00",
+    "CH-events": "no",
+    "NSFW": "NO",
+    "status": "true",
+    "url": "https://streamxhd.sbs/live1.php?stream=disney11",
+    "type": "CLEARKEY",
+    "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
+    "evento": "yes"
+  },
+  {
+    "name": "Wolverhampton vs Derby",
+    "info": "Championship - 17:00",
+    "CH-events": "no",
+    "NSFW": "NO",
+    "status": "true",
+    "url": "https://streamxhd.sbs/live1.php?stream=disney12",
     "type": "CLEARKEY",
     "icono": "https://raw.githubusercontent.com/NovaplayGO/novaimg/main/icons/564.webp",
     "evento": "yes"
